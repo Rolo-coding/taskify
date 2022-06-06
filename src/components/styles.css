@@ -43,8 +43,8 @@
   width: 95%;
   margin-top: 1rem;
   display: grid;
-  gap: 0.95rem;
-  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 }
 
 .todos__heading {
@@ -61,6 +61,7 @@
 }
 
 .remove {
+  height: min-content;
   background-color: rgb(235, 103, 80);
 }
 
@@ -70,7 +71,7 @@
   margin-top: 1rem;
   border-radius: 0.4rem;
   background-image: url('https://img.freepik.com/free-photo/crumpled-yellow-paper-background-close-up_60487-2390.jpg?size=626&ext=jpg');
-  transition: 0.2s;
+  transition: 0.2s all ease-in-out;
 }
 
 .todo:hover {
