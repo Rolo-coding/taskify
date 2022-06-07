@@ -46,9 +46,9 @@ const SingleTodo = ({ todo, todos, setTodos, index }: Props) => {
 
   return (
     <Draggable draggableId={todo.id.toString()} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <form
-          className="todo"
+          className={`todo ${snapshot.isDragging && 'drag'}`}
           onSubmit={(e) => editTodo(e, todo.id)}
           {...provided.draggableProps}
           {...provided.dragHandleProps}

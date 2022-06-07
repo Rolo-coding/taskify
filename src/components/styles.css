@@ -102,3 +102,15 @@ input.todo__text {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.dragactive {
+  background-color: rgb(0, 211, 236);
+}
+
+.dragcomplete {
+  background-color: rgb(235, 80, 80);
+}
+
+.drag {
+  box-shadow: 0 0 20px black;
+}
