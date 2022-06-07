@@ -42,8 +42,11 @@ const App: React.FC = () => {
     }
 
     destination.droppableId === 'TodosList'
-      ? active.splice(destination.index, 0, add)
-      : complete.splice(destination.index, 0, add)
+      ? active.splice(destination.index, 0, { ...add, isDone: false })
+      : complete.splice(destination.index, 0, { ...add, isDone: true })
+
+    setTodos(active)
+    setCompletedTodos(complete)
   }
 
   return (
